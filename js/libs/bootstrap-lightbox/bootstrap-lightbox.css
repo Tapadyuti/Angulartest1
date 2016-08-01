@@ -1,0 +1,253 @@
+
+.lightbox {
+  position: relative;
+  top: 70px;
+  z-index: 1050;
+  line-height: 0;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.lightbox .hide {
+  display: none;
+}
+
+.lightbox .in {
+  display: block;
+}
+
+.lightbox-content {
+  position: relative;
+  padding: 2%;
+  width: 40%;
+  top: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+  background-color: #e6e6e6;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.lightbox-content .lightbox-caption {
+  position: absolute;
+  right: 12px;
+  bottom: 11px;
+  left: 11px;
+  padding: 2%;
+  font-size: 100%;
+  line-height: 1.6875;
+
+  line-height: 18px;
+  color: white;
+  text-align: center;
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-header .close {
+  margin-top: -16px;
+  margin-right: -16px;
+  font-size: 2em;
+  color: white;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.lightbox-header .close :hover {
+  opacity: .4;
+  filter: alpha(opacity=40);
+}
+
+.inputClass{
+    padding: 1px ;
+    font-size: 15px;
+    height: 20px;
+    font-size: 15px;
+    width: 98%;
+}
+
+
+.lightbox-button  {
+  padding: 5px;
+  width: 100%;
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  filter: alpha(opacity=80);
+}
+
+.lightbox-button .close :hover {
+  opacity: .4;
+  filter: alpha(opacity=40);
+}
+
+.topDiv{
+    position: relative;    
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+.topDiv-inner-left{
+    width: 52%;
+    padding: 2px;
+    padding-right: 5px;
+    
+    position: relative;
+    float: left;
+    text-align: right;
+    
+}
+
+.topDiv-inner-right{
+   // width: 30%;
+    padding: 2px;
+    position: relative;
+    float: left;    
+    text-align: left;
+}
+
+.myhyprelink{
+    color: blue;
+    cursor: pointer;
+}
+
+.myhyprelink:hover{
+    color: red;
+}
+
+.myhyprelink:visited{
+    color: blue;
+}
+
+.question-image{
+    display: inherit;
+    width: 99%;
+}
+.imageRespond{
+    padding: 2px;
+    position: relative;
+    width: 97%;
+    height: auto;
+}
+
+.text-content-responsive{
+    position: relative;
+    //border: 1px solid #000;
+    padding: 2px 2px;
+    text-align: left;
+    display: block;
+    width: 95%;
+    text-align: justify;
+    padding: 2px;
+    
+}
+
+
+.lightbox-content-white {
+  position: relative;
+  padding: 2%;
+  width: 40%;
+  top: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.lightbox-content-green{
+  position: relative;
+  padding: 2%;
+  width: 98%;
+  top: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+  font-size: 100%;
+  line-height: 1.6875;
+  
+  background-color: lightgreen;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+
+.lightbox-content-red{
+  position: relative;
+  padding: 2%;
+  width: 98%;
+  top: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  
+  font-size: 100%;
+  line-height: 1.6875;
+
+  background-color: plum;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  /* IE6-7 */
+
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.resultDiv{
+    
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+

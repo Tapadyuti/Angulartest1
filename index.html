@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/libs/bootstrap-lightbox/bootstrap-lightbox.css" rel="stylesheet" type="text/css"/>
+        <script src="js/libs/angular.js/angular.js" type="text/javascript"></script>
+        <script src="js/scripts/scripts.js" type="text/javascript"></script>
+        <script>
+          function pageReload()
+          {
+              location.reload();
+          }
+        </script>
+    </head>
+    <body ng-app="myApp" >
+        <div ng-controller="myCtrl">
+            <div class="topDiv">
+                <div class="topDiv-inner-left">
+                    <div class="myhyprelink" onclick="pageReload()" ng-show="!verified">Login</div>
+                    <span ng-show="verified">Hi, {{myemail}}</span>
+                </div>
+
+                <div class="topDiv-inner-right">
+                    <div class="myhyprelink" onclick="pageReload()" ng-show="!verified">Register</div>
+                    <div class="myhyprelink" onclick="pageReload()" ng-show="verified" >Logout</div>
+                </div>
+            </div>
+            <br><br>
+            <br><br>
+            <div class="lightbox-content" ng-hide="loginEnabled">
+                    <form name="f1" action="">
+                        <input class="inputClass" name="email" type="email" placeholder="Email" ng-model="myemail" required>
+                            <br>
+                            <br>
+                        <input class="inputClass" name="pwd" type="password" placeholder="Password" ng-model="mypwd" required>
+                            <br>
+                            <br>
+                            <input class="lightbox-button" name="register" type="submit" value="Register"  ng-click="register()" ng-disabled="(!myemail || !mypwd)">
+                    </form>
+                    <br/>
+                </div>
+            
+                <div class="lightbox-content" ng-hide="!loginEnabled || verified">
+                    <form name="f1" action="">
+                        <input class="inputClass" name="remail" type="email" placeholder="Enter Email" ng-model="remail" required>
+                            <br>
+                            <br>
+                        <input class="inputClass" name="rpwd" type="password" placeholder="Enter Password" ng-model="rpwd" required>
+                            <br>
+                            <br>
+                            <input class="lightbox-button" name="login" type="submit" value="Login" ng-click="verifyLogin()" ng-disabled="(!remail && !rpwd)">
+                    </form>
+                    <br>
+                    <div style="font-size: 15px; color: crimson" ng-show="!verified">
+                        {{incorrectLogin}}
+                    </div>
+                </div>
+            <div ng-show="verified">
+                <div class="" ng-include="'questionList.html'">
+                </div>
+            </div>
+             <div ng-if="questionCount>=3">
+                <div class="" ng-include="'showAnswers.html'">
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

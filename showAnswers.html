@@ -1,0 +1,34 @@
+<div>
+    <div class="resultDiv">{{evaluation()}}
+        You scored: {{percent}}%
+    </div>
+    <br/>
+    <br/>
+    <div ng-repeat="x in questionSet">
+        <div class="lightbox-content-white" >
+            <div>
+                <div class="text-content-responsive" >
+                    {{x.qno}}. {{x.question}}
+                </div>            
+                <div ng-if="x.image !== ''" >
+                    <img class="imageRespond" src="{{x.image}}" alt="No Image"/>
+                </div>
+            </div>
+            <br/>
+            <div class="lightbox-content-green" ng-if="answersArray[$index] === x.answer">
+                Correct!<br/>
+                {{x.options[x.answer]}}
+            </div>
+            <div class="lightbox-content-red" ng-if="answersArray[$index] !== x.answer">
+                You answered incorrect<br/>
+                {{x.options[answersArray[$index]]}}<br/>
+                Correct answer:<br/>
+                {{x.options[x.answer]}}
+            </div>
+        </div>
+        <br/>
+    </div>    
+</div>answersArray = {{answersArray}}
+
+
+ 

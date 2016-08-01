@@ -1,0 +1,28 @@
+<div class='lightbox-content' ng-show="questionSet[questionCount]">
+    
+    <div class="question-image">
+        <div class="text-content-responsive" >{{questionSet[questionCount].qno}}. {{questionSet[questionCount].question}}
+        </div>
+        <div ng-if="questionSet[questionCount].image !== ''" >
+            <img class="imageRespond" src="{{questionSet[questionCount].image}}" alt="No Image"/>
+        </div>        
+    </div>
+    <br>
+    <div>
+        <form name="myForm">
+             <label ng-repeat="x in questionSet[questionCount].options">
+                <input type="radio" name="rad" ng-model="$parent.radioValue" value="{{$index}}">
+                {{x}}<br><!-- radio button have its own scope so I have used $parent -->
+            </label>
+            <br/>
+            <input class="lightbox-button" name="Continue" type="submit" value="Continue" ng-click="nextQuestion()" ng-disabled="!radioValue">
+        </form>
+        radioValue = {{radioValue}}
+        <br/>
+        questionCount = {{questionCount}}
+        <br/>
+    </div> 
+</div>
+
+
+ 
